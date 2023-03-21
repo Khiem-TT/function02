@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ex09</title>
+</head>
+<body>
+<script>
+    function check(array, x) {
+        let count = 0;
+        for (let i = 0; i < array.length; i++) {
+            if (x === array[i]) {
+                count++;
+            }
+        }
+        if (count > 0) {
+            return count;
+        }
+        return -1;
+    }
+
+    let array = prompt('Nhập mảng (ngăn cách các phần tử bằng dấu phẩy):').split(',');
+    let x = prompt('Nhập ký tự:');
+    alert(check(array, x));
+</script>
+</body>
+</html>

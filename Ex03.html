@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ex03</title>
+</head>
+<body>
+<script>
+    function factorial(number) {
+        if (number < 0) {
+            return 'Non exist';
+        } else if (number === 0) {
+            return 1;
+        }
+        return number * factorial(number - 1);
+    }
+
+    let num = +prompt('Enter your number:');
+    alert(`${num}! = ${factorial(num)}`);
+</script>
+</body>
+</html>
